@@ -4,8 +4,6 @@ from mcp.server.fastmcp import FastMCP
 import sys
 print("Math server starting...", file=sys.stderr)
 
-
-
 mcp = FastMCP()
 
 @mcp.tool()
@@ -20,8 +18,3 @@ def multiply(a: int, b: int) -> int:
 
 if __name__ == "__main__":
     mcp.run(transport = "stdio")
-
-
-
-
-    
