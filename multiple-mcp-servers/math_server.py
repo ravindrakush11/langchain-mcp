@@ -4,7 +4,7 @@ from mcp.server.fastmcp import FastMCP
 import sys
 print("Math server starting...", file=sys.stderr)
 
-mcp = FastMCP()
+mcp = FastMCP("math")
 
 @mcp.tool()
 def add(a: int, b: int) -> int:
